@@ -1,0 +1,301 @@
+
+body{
+    color: #666;
+}
+
+/*-公共-*/
+/*导航条*/
+#myNav a.navbar-brand{
+    padding: 0;
+}
+#myNav ul.navbar-nav{
+    margin: 0 -15px;
+}
+/*巨幕说明*/
+.jumbotron{
+    background-image: url(../img/bg.jpg);
+    margin: 50px 0 0 0;
+    color: #ccc;
+}
+.jumbotron h1{
+    font-size: 26px;
+    padding: 0 0 0 20px;
+}
+.jumbotron h4{
+    font-size: 15px;
+    padding: 0 0 0 20px;
+}
+/*底部*/
+#footer{
+    background-color: #666;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+}
+
+
+/*-首页-*/
+/*轮播*/
+#myCarousel{
+    margin-top: 50px;
+}
+#myCarousel div.item:nth-child(1){
+    background-color: #223240;
+}
+#myCarousel div.item:nth-child(2){
+    background-color: #f5e4dc;
+}
+#myCarousel div.item:nth-child(3){
+    background-color: #de2a2d;
+}
+#myCarousel .carousel-inner img{
+    margin: 0 auto;
+}
+
+/*内容区域*/
+.tab1{
+    margin: 30px 0px;
+    color: #666;
+}
+.tab1 .tab-h2{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #0059b2;
+}
+.tab1 .tab-p{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #999;
+    margin: 20px 0 40px 0;
+}
+.tab1 .col{
+    padding: 20px;
+}
+.tab1 .media-heading{
+    margin: 5px 0 20px 0;
+}
+.tab1 .text-muted{
+    color: #999;
+    text-decoration: line-through;
+}
+.tab2{
+    background-color: #eee;
+    padding: 60px 0;
+    text-align: center;
+}
+.tab2 img{
+    width: 40%;
+    height: 40%;
+}
+.text h3{
+    font-size: 20px;
+}
+.text p{
+    font-size: 14px;
+}
+.tab3{
+    padding: 60px 0;
+    text-align: center;
+}
+.tab3 img{
+    width: 65%;
+    height: 65%;
+}
+
+
+/*-资讯-*/
+#info{
+    background-color: #eee;
+    padding: 40px 0;
+}
+#info .info-left .container-fluid{
+    padding: 0px;
+}
+#info .left-list{
+    background-color: #fff;
+    margin: 0 0 20px 0;
+    box-shadow: 2px 2px 3px #ccc;
+}
+#info .left-list img{
+    margin: 12px 0px;
+}
+#info .left-list h4{
+    padding: 3px 0 0 0;
+    color: #333;
+    font-size: 14px;
+}
+#info .left-list p{
+    line-height: 160%;
+}
+#info .info-right{
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #ccc;
+}
+#info .info-right blockquote{
+    margin: 0px;
+    padding: 0px;
+}
+#info .info-right h2{
+    font-size: 20px;
+    color: #333;
+    padding: 5px;
+}
+#info .right-list >div:nth-child(1){
+    margin: 12px 0px;
+    padding: 0px;
+}
+#info .right-list >div:nth-child(2){
+    padding-right: 0px; 
+}
+#info .right-list h4{
+    font-size: 16px;
+    color: #333;
+    padding: 3px 0 0 0;
+    line-height: 160%;
+}
+
+
+/*-案例-*/
+#case{
+    background-color: #eee;
+    padding: 40px 0;
+    text-align: center;
+}
+#case h4{
+    color: #666;
+}
+#case p{
+    color: #666;
+    line-height: 160%;
+}
+
+
+
+/*-关于-*/
+#about{
+    background-color: #eee;
+    padding: 40px 15px;
+}
+#about a{
+    color: #0059b2;
+}
+#about .about-right{
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #ccc;
+}
+#about h3{
+    color: #333;
+    padding: 20px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+}
+#about p{
+    line-height: 200%;
+    font-size: 13px;
+}
+
+
+/*-媒体查询-响应式-*/
+/*小屏幕*/
+@media (min-width: 768px) {
+    .tab1 .tab-h2{
+        font-size: 26px;
+    }
+    .tab1 .tab-p{
+        font-size: 16px;
+    }
+    .text h3{
+        font-size: 22px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .tab2-text{
+        float: left;
+    }
+    .tab2-img{
+        float: right;
+    }
+    .jumbotron h1{
+        font-size: 30px;
+    }
+    .jumbotron h4{
+        font-size: 16px;
+    }
+    #info .left-list h4{
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    #about h3{
+        font-size: 19px;
+    }
+    #about p{
+        font-size: 14px;
+    }
+}
+/*中屏幕*/
+@media (min-width: 992px) {
+    .tab1 .tab-h2{
+        font-size: 28px;
+    }
+    .tab1 .tab-p{
+        font-size: 17px;
+    }
+    .text h3{
+        font-size: 24px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    .jumbotron h1{
+        font-size: 33px;
+    }
+    .jumbotron h4{
+        font-size: 17px;
+    }
+    #info .left-list h4{
+        font-size: 18px;
+    }
+    #about h3{
+        font-size: 20px;
+    }
+    #about p{
+        font-size: 15px;
+    }
+}
+/*大屏幕*/
+@media (min-width: 1200px) {
+    .tab1 .tab-h2{
+        font-size: 30px;
+    }
+    .tab1 .tab-p{
+        font-size: 18px;
+    }
+    .text h3{
+        font-size: 26px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    .jumbotron h1{
+        font-size: 36px;
+    }
+    .jumbotron h4{
+        font-size: 18px;
+    }
+    #info .left-list h4{
+        font-size: 20px;
+    }
+    #about h3{
+        font-size: 22px;
+    }
+    #about p{
+        font-size: 16px;
+    }
+}
